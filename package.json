@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/main.ts"
+    "start": "ts-node src/main.ts",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "Michael Schilling",
@@ -16,7 +17,8 @@
   "devDependencies": {
     "@types/node": "^22.7.6",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "prettier": "^2.5.1"
   },
   "dependencies": {
     "@types/luxon": "^3.4.2",

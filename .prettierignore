@@ -1,0 +1,13 @@
+# Ignore artifacts:
+build
+coverage
+node_modules
+
+# Ignore all HTML files:
+*.html
+
+# Ignore all files in the scripts directory:
+scripts
+
+# Ignore all files in the temp directory:
+temp
