@@ -1,0 +1,26 @@
+{
+  "name": "deskbird-scheduler",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/main.ts"
+  },
+  "keywords": [],
+  "author": "Michael Schilling",
+  "license": "ISC",
+  "engines": {
+    "node": "22"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@types/luxon": "^3.4.2",
+    "dotenv-flow": "^4.1.0",
+    "luxon": "^3.5.0"
+  }
+}

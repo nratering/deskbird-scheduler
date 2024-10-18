@@ -1,0 +1,30 @@
+name: Basic Workflow
+
+on:
+  workflow_dispatch:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * *'  # Runs at the end of every day (midnight UTC)
+
+jobs:
+  simple-task:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install node modules
+        run: npm ci
+        env:
+            CI: true          
+            
+      - name: Create new booking
+        env:
+          REFRESH_TOKEN: ${{ secrets.DESKBIRD_REFRESH_TOKEN }}
+        run: npm run start
