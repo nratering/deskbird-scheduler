@@ -3,13 +3,12 @@ name: Basic Workflow
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # Runs at the end of every day (midnight UTC)
+    - cron: '0 22 * * *' # Runs at the end of every day (midnight Amsterdam converted to UTC)
 
 jobs:
   simple-task:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -21,8 +20,8 @@ jobs:
       - name: Install node modules
         run: npm ci
         env:
-            CI: true          
-            
+          CI: true
+
       - name: Create new booking
         env:
           REFRESH_TOKEN: ${{ secrets.DESKBIRD_REFRESH_TOKEN }}
