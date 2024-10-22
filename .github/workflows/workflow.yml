@@ -26,7 +26,7 @@ jobs:
         env:
           REFRESH_TOKEN: ${{ secrets.DESKBIRD_REFRESH_TOKEN }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          DESKBIRD_RESOURCE_ID: ${{ env.DESKBIRD_RESOURCE_ID }}
-          DESKBIRD_ZONE_ITEM_ID: ${{ env.DESKBIRD_ZONE_ITEM_ID }}
-          DESKBIRD_WORKSPACE_ID: ${{ env.DESKBIRD_WORKSPACE_ID }}
+          DESKBIRD_RESOURCE_ID: ${{ vars.DESKBIRD_RESOURCE_ID }}
+          DESKBIRD_ZONE_ITEM_ID: ${{ vars.DESKBIRD_ZONE_ITEM_ID }}
+          DESKBIRD_WORKSPACE_ID: ${{ vars.DESKBIRD_WORKSPACE_ID }}
         run: npm run start
