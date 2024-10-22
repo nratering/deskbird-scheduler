@@ -10,24 +10,33 @@
 ### Installation
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/mschilling/deskbird-scheduler.git
    cd deskbird-scheduler
    ```
 
 2. Install dependencies:
+
    ```sh
    npm install
    ```
 
 3. Create a `.env` file in the root directory and add your Deskbird refresh token:
+
    ```sh
    REFRESH_TOKEN=your_deskbird_refresh_token
+   GOOGLE_API_KEY=your_google_api_key
+   DESKBIRD_RESOURCE_ID=your_deskbird_resource_id
+   DESKBIRD_ZONE_ITEM_ID=your_deskbird_zone_item_id
+   DESKBIRD_WORKSPACE_ID=your_deskbird_workspace_id
+
    ```
 
 ### Running the Bot
 
 To run the bot, use the following command:
+
 ```sh
 npm run start
 ```
@@ -52,3 +61,7 @@ npm run start
 - Make sure your code follows the coding standards.
 - Test your changes thoroughly.
 - Submit a pull request with a clear description of your changes.
+
+## License
+
+This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
