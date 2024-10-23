@@ -12,6 +12,7 @@ import { getNextBookingDate } from './utils/date/get-next-booking-date';
 import { getNewAccessToken } from './utils/get-new-access-token';
 
 // Main function
+// test
 async function run() {
   const refreshToken = process.env.REFRESH_TOKEN;
 
