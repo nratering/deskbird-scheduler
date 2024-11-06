@@ -3,7 +3,7 @@ name: Basic Workflow
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 22 * * *' # Runs at the end of every day (midnight Amsterdam converted to UTC)
+    - cron: '0 23 * * *' # Runs at the end of every day (midnight Amsterdam converted to UTC)
 
 jobs:
   simple-task:
