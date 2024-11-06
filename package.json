@@ -18,7 +18,7 @@
     "@types/node": "^22.8.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3",
-    "prettier": "^2.5.1"
+    "prettier": "^3.3.3"
   },
   "dependencies": {
     "@types/luxon": "^3.4.2",
