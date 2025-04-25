@@ -21,8 +21,8 @@
     "prettier": "^3.5.3"
   },
   "dependencies": {
-    "@types/luxon": "^3.4.2",
+    "@types/luxon": "^3.6.2",
     "dotenv-flow": "^4.1.0",
-    "luxon": "^3.5.0"
+    "luxon": "^3.6.1"
   }
 }
